@@ -37,7 +37,7 @@ function generatePassword() {
 
   else if (Length > 128 || Length < 8) {
       window.alert ("Password length has to be between 8 to 128 characters long");
-      return;
+      return generatePassword();
   }
 
   else (CharacterLength = Length);
@@ -83,7 +83,8 @@ function generatePassword() {
   }
 
   if(!uppercaseSelector && !lowercaseSelector && !numbersSelector && !symbolsSelector) {
-    return alert("Invalid input: you need at least one characted selected");
+    alert("Invalid input: you need at least one characted selected");
+    return generatePassword();
   }
   if(!validate) {
     return;
