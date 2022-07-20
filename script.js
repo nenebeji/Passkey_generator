@@ -10,10 +10,10 @@ var possibleCharacters = "";
 
 // Variables to store information from the prompt input
 var CharacterLength = '';
-var uppercaseprompt = '';
-var lowercaseprompt = '';
-var numbersprompt = '';
-var symbolsprompt = '';
+var uppercaseSelector = '';
+var lowercaseSelector = '';
+var numbersSelector = '';
+var symbolsSelector = '';
 
 
 // Write password to the #password input
@@ -41,18 +41,18 @@ function generatePassword() {
 
   else (CharacterLength = Length);
   
-  var uppercaseprompt = confirm ("Click ok to include atleast one uppercase character");
+  var uppercaseSelector = confirm ("Click ok to include atleast one uppercase character");
 
 
-  var lowercaseprompt = confirm ("Click ok to include atleast one lowercase character");
+  var lowercaseSelector = confirm ("Click ok to include atleast one lowercase character");
 
 
 
-  var numbersprompt = confirm ("Click ok to include atleast one numeric character");
+  var numbersSelector = confirm ("Click ok to include atleast one numeric character");
 
   
 
-  var symbolsprompt = confirm ("Click ok to include atleast one special character");
+  var symbolsSelector = confirm ("Click ok to include atleast one special character");
 
 
   var validate = confirm ("Click Ok to confirm your selections");
@@ -61,22 +61,22 @@ function generatePassword() {
 
  // Declaring the values to include in possibleCharacters 
 
-  if(uppercaseprompt) {
+  if(uppercaseSelector) {
     possibleCharacters = possibleCharacters + uppercase;
     console.log(possibleCharacters);
   }
 
-  if(lowercaseprompt) {
+  if(lowercaseSelector) {
     possibleCharacters = possibleCharacters + lowercase;
     console.log (possibleCharacters);
   }
 
-  if(numbersprompt) {
+  if(numbersSelector) {
     possibleCharacters = possibleCharacters + numbers;
     console.log (possibleCharacters);
   }
 
-  if(symbolsprompt) {
+  if(symbolsSelector) {
     possibleCharacters = possibleCharacters + symbols;
     console.log (possibleCharacters);
   }
