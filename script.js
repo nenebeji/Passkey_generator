@@ -9,6 +9,7 @@ var symbols = "!@£$%^&*()_+-=[]{}\';./,?><:|";
 var possibleCharacters = "";
 
 // Variables to store information from the prompt input
+
 var CharacterLength = '';
 var uppercaseSelector = '';
 var lowercaseSelector = '';
@@ -81,6 +82,9 @@ function generatePassword() {
     console.log (possibleCharacters);
   }
 
+  if(!uppercaseSelector && !lowercaseSelector && !numbersSelector && !symbolsSelector) {
+    return alert("Invalid input: you need at least one characted selected");
+  }
   if(!validate) {
     return;
   }
