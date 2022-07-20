@@ -1,5 +1,6 @@
 # Passkey Generator
 
+![screencapture-file-Users-nenebeji-Documents-bootcamp-challenges-Passkey-generator-index-html-2022-07-20-20_03_06](https://user-images.githubusercontent.com/105363883/180065701-400d0661-e495-4ee9-9339-4062f9caaa48.png)
 
 > Fun with passwords! :)
 
